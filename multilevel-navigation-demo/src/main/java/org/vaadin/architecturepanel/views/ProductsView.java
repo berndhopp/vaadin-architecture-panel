@@ -40,15 +40,15 @@ public class ProductsView extends TabSheet implements View {
 
         switch (tabName.toLowerCase()){
             case "a":
-                categoryA.setCaption(subParam);
+                categoryA.setValue(subParam);
                 setSelectedTab(categoryA);
                 break;
             case "b":
-                categoryB.setCaption(subParam);
+                categoryB.setValue(subParam);
                 setSelectedTab(categoryB);
                 break;
             default:
-                start.setCaption("could not find category '" + tabName + "'");
+                start.setValue("could not find category '" + tabName + "'");
                 setSelectedTab(start);
                 break;
         }
